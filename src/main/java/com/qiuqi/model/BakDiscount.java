@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 
 @Entity
-@Table(name = "bakDiscount")
+@Table(name = "bak_discount")
 public class BakDiscount {
     @Id
     @GeneratedValue(generator = "jpa-uuid")
