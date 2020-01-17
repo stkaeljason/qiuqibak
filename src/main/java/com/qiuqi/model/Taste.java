@@ -17,4 +17,20 @@ public class Taste {
 
     @OneToMany(mappedBy = "taste")
     private List<Bak> bakList;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTaste_name() {
+        return taste_name;
+    }
+
+    public void setTaste_name(String taste_name) {
+        this.taste_name = taste_name;
+    }
 }
