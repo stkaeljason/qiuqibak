@@ -3,6 +3,7 @@ package com.qiuqi.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @GenericGenerator(name = "jpa-uuid", strategy = "uuid")
@@ -10,8 +11,9 @@ import java.util.List;
 @Table(name = "bak")
 public class Bak {
 
-    @Column(name = "id", unique = true, nullable = false, length = 20)
+//    @Column(name = "id", unique = true, nullable = false, length = 20)
     @Id
+    @NotNull
     @GeneratedValue(generator = "jpa-uuid")
     private String id;
 
